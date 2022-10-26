@@ -11,12 +11,17 @@ body {
     width: 100%;
 }
 
+/* .logo {
+    height: 40px;
+} */
+
 nav {
     width: 100%;
     height: 50px;
     top: 30px;
     left:0;
     background-color: white;
+    margin-bottom: 0;
 }
 
 #top-nav {
@@ -25,6 +30,9 @@ nav {
     overflow: hidden;
     display: block;
     float: left;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px;
 }
 
 #top-nav ul{
@@ -72,7 +80,7 @@ li::after{
     height: 5px;
     left: 50%;
     bottom:0;
-    background-color: black;
+    background-color: #e5cca8;
     transition: all ease-in-out .2s;
 }
 
@@ -90,11 +98,11 @@ li:hover::after{
 }
    
 ::-webkit-scrollbar-thumb {
-    background: #f0c992;
+    background: #e5cca8;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #a37633b7; 
+    background: #a78148b7;
 }
 
 .outer-div {
@@ -110,7 +118,7 @@ li:hover::after{
 .flights-table {
     overflow:auto;
     width:820px;
-    height:200px;
+    height:300px;
     background:rgb(255, 255, 255);
 }
 
@@ -121,7 +129,7 @@ li:hover::after{
     top:0;
     left:0;
     height:20px;
-    background:#f0c992;
+    background:#e5cca8;
     border:1px solid #eee;
     color:#eee;
     font-weight: bold;
@@ -138,7 +146,7 @@ li:hover::after{
     position:absolute;
     width:819px;
     text-align:center;
-    background:#f0c992;
+    background:#e5cca8;
     border:1px solid #eee;
     color:#eee;
     font-weight: bold;
@@ -152,7 +160,7 @@ li:hover::after{
 }
 
 .outer-div th {
-    background:#a37633b7; 
+    background:#a78148b7; 
     color:#fff;}
     .outer-div .dk {background:#fff;
 }
@@ -160,9 +168,10 @@ li:hover::after{
 .background {
     filter: brightness(90%);
     position: relative;
-    top: 20px;
     width: 100%;
-    object-fit: scale-down;
+    height: 600px;
+    object-fit: cover;
+    object-position: 15% 100%;
     clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 85%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
 }
 
