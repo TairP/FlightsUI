@@ -83,7 +83,7 @@ li::after{
     transition: all ease-in-out .2s;
 }
 
-li:hover::after{
+li:hover::after {
     width: 100%;
     left: 0;
 }
